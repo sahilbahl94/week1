@@ -1,3 +1,5 @@
+require "pry"
+
 class FlashCard
   attr_accessor :question, :answer
 
@@ -36,6 +38,16 @@ card03 = FlashCard.new("Why is the sky blue", "Because, science.")
 
 card_list = [card0, card01, card1, card02, card2, card3, card03, card5]
 
+card_list.map do | card |
+  card.question += "?"
+end
+
+binding.pry
+
 card0.question_and_answer(0)
 
 display_cards(card_list)
+
+
+
+
