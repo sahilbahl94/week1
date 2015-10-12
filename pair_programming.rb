@@ -45,7 +45,7 @@ end
 
 new_card_list = card_list.select { |card| card.question.include?("array") }
 
-new_card_list.each { |card| puts card.question}
+
 
 
   
