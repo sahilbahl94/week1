@@ -44,16 +44,12 @@ card_list.map do | card |
 end
 
 new_card_list = card_list.select { |card| card.question.include?("array") }
+new_card_list = new_card_list.shuffle
 
+# card0.question_and_answer(0)
 
+display_cards(new_card_list)
 
-
-  
-=begin
-card0.question_and_answer(0)
-
-display_cards(card_list)
-=end
 
 
 
